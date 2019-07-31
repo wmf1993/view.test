@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta name="keywords" content="" />
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/navBar.css" />
+  <link rel="stylesheet" href="./css/bottom.css" />
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script src="./js/axios.min.js"></script>
+  <title>2019年中浙江楼市闭门研讨会</title>
+</head>
+<body>
+  <div class="nav_header">
+    <div class="nav-con">
+      <a href="http://zzhz.zjol.com.cn/" target="_blank" class="logo"><i class="icon icon-logo"></i></a>
+      <div class="nav-main">
+        <ul>
+          <li class="drop">
+            <a href="javascript:;" class="dropdown-toggle">新闻 <i class="icon icon-down"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/xww/">楼市新闻</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/xww/ycpd/">原创策划</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/sppd/">视频报道</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/xww/jczt/">热点专题</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/xww/jczt/zxsf/">独家专访</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop">
+            <a href="javascript:;" class="dropdown-toggle">新房<i class="icon icon-down"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a target="_blank" href="http://xinpan.zzhz.zjol.com.cn/">杭州新房</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/ybf/">样板房展</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://xinpan.zzhz.zjol.com.cn/ditu/">地图找房</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/zhds/">优惠团购</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/dtpd/">地铁房源</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop">
+            <a href="javascript:;" class="dropdown-toggle">服务<i class="icon icon-down"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/zhds/">电商优惠</a>
+              </li>
+              <li>
+                <a target="_blank" href="javascript:;http://xinpan.zzhz.zjol.com.cn/djgfczx/">专家咨询</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/zhds/">住杭卡</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/05zzhz/card/zhkindex.html">看房活动</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhzbbs.zjol.com.cn/thread-21393938-1-1.html">免费验房</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop">
+            <a href="javascript:;" class="dropdown-toggle">互动<i class="icon icon-down"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/05zzhz/bbs/index.shtml">口水楼市</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhz.zjol.com.cn/05zzhz/bbs/jiayuan/index.shtml">业主家园</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhzbbs.zjol.com.cn/forum.php?mod=forumdisplay&amp;fid=2&amp;filter=typeid&amp;typeid=4">买房故事</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhzbbs.zjol.com.cn/forum-2-1.html">维权评楼</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://zzhzbbs.zjol.com.cn/forum.php?mod=forumdisplay&amp;fid=2&amp;filter=typeid&amp;typeid=5">看楼照片</a>
+              </li>
+            </ul>
+          </li>
+          <li class="drop">
+            <a href="javascript:;" class="dropdown-toggle">研究院<i class="icon icon-down"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a target="_blank" href="http://yanjiu.zzhz.com.cn/">地产研究</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://yanjiu.zzhz.com.cn/yjynews/38/">政策解读</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://land.zzhz.zjol.com.cn/news-24/">主题推荐</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://yanjiu.zzhz.com.cn/yjynews/36/">区域价值</a>
+              </li>
+              <li>
+                <a target="_blank" href="http://land.zzhz.zjol.com.cn/downcenter/filelist-5/">地块分析</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-tips">
+        <ul>
+          <li>
+            <a href="http://www.zjol.com.cn/" target="_blank">浙江在线</a>
+          </li>
+          <li class="hidden-m">
+            <a class="addfav" href="javascript:;" onClick="_addFavorite()">加入收藏</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="header"></div>
+  <div class="main">
+    <div class="parts position">
+      <div>
+        <div>
+          <div>
+            <img src="./img/title.png" />
+          </div>
+          <div class="mobile">
+            <span>7月23日上午，杭州乐伽公寓召开发布会，正式回应：乐伽公寓绝不会跑路，公司杭州业务会分割出去，会有其他公司接盘。 我们不想让租客和房东任何一方有损失，会积极处理解决，但处理起来需要时间，希望房东租客能给我们一点时间，之后会在乐伽公寓官方平台给出具体的解释和安排。望房东租客能给我们一点时间，之后会在乐伽公寓官方平台给出具体的解释和安排。</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parts parts-2">
+      <div>
+        <div>
+          <div>
+            <ul class="heroes">
+              <li class="hero" style="left: 0px;">
+                <img src="./img/1.jpg" />
+              </li>
+              <li class="hero unselected" style="left: 1000px;">
+                <img src="./img/2.jpg" />
+              </li>
+              <li class="hero unselected" style="left: 2000px;">
+                <img src="./img/3.jpg" />
+              </li>
+              <li class="hero unselected" style="left: -1000px;">
+                <img src="./img/4.jpg" />
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="javascript:" class="prev icon-arrow-left"></a>
+            <a href="javascript:" class="next icon-arrow-right"></a>
+          </div>
+          <div>
+            <div class="mask mask-left"></div>
+            <div class="mask mask-right"></div>
+          </div>
+        </div>
+      </div>
+      <div class="parts-title">
+        <div>
+          <img src="./img/square.png" />
+          <span>现场图集</span>
+        </div>
+      </div>
+    </div>
+    <div class="parts parts-3">
+      <div>
+        <div>
+          <img src="./img/square.png" />
+          <span>专家观点</span>
+        </div>
+      </div>
+      <div class="list-out">
+        <ul class="list">
+          <li id="list-1">
+            <div>
+              <img src="./img/pic.png" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>张志伟</div>
+                <div>ZHANG ZHI WEI</div>
+                <div style="height:48px">未来科技招商局局长</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-2"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-2">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>张志伟</div>
+                <div>ZHANG ZHI WEI</div>
+                <div style="height:48px">未来科技招商局局长</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-3"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-3">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>张志伟</div>
+                <div>ZHANG ZHI WEI</div>
+                <div style="height:48px">未来科技招商局局长</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-4"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-4">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>张志伟</div>
+                <div>ZHANG ZHI WEI</div>
+                <div style="height:48px">未来科技招商局局长</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-5"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-5">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>张志伟</div>
+                <div>ZHANG ZHI WEI</div>
+                <div style="height:48px">未来科技招商局局长</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+            </div>
+          </li>
+          <li id="list-6">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>陈恒六</div>
+                <div>CHEN HENG LIU</div>
+                <div style="height:48px">融创中国副总裁、东南区域集团董事长</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-7"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-7">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>张旭忠</div>
+                <div>ZHANG XU ZHONG</div>
+                <div style="height:48px">龙湖集团副总裁，龙湖集团浙江公司总经理</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-8"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-8">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>王卫</div>
+                <div>WANG WEI</div>
+                <div style="height:48px">融信第三事业部总裁</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-9"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-9">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>关翀</div>
+                <div>GUAN CHONG</div>
+                <div style="height:48px">中国金茂上海区域副总经理、杭州公司总经理</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-10"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-10">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>孙文治</div>
+                <div>SUN WEN ZHI</div>
+                <div style="height:48px">中海杭州公司总经理</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-11"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-11">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>方朋</div>
+                <div>FANG PENG</div>
+                <div style="height:48px">华润置地杭州公司总经理</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-12"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-12">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>李晓冬</div>
+                <div>LI XIAO DONG</div>
+                <div style="height:48px">阳光城浙江区域总裁</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-13"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-13">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>汤凯</div>
+                <div>TANG KAI</div>
+                <div style="height:48px">远洋地产杭州公司总经理</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-14"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-14">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>钱建国</div>
+                <div>QIAN JIAN GUO</div>
+                <div style="height:48px">招商蛇口杭州公司总经理</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-15"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-15">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>宋延安</div>
+                <div>SONG YAN AN</div>
+                <div style="height:48px">新希望地产杭州公司总经理</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-16"><img src="./img/load.png" /></a></div> 
+            </div>
+          </li>
+          <li id="list-16">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>王树栋</div>
+                <div>WANG SHU DONG</div>
+                <div style="height:48px">绿都地产杭州事业部总裁</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-17"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-17">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>柴伏斌</div>
+                <div>CHAI FU BIN</div>
+                <div style="height:48px">安徽置地浙江区域公司总经理</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+              <div class="load"><a href="#list-18"><img src="./img/load.png" /></a></div>
+            </div>
+          </li>
+          <li id="list-18">
+            <div>
+              <img src="" />
+            </div>
+            <div class='intro'>
+              <div>
+                <div>陈敏</div>
+                <div>CHEN MIN</div>
+                <div style="height:48px">人行杭州中心支行货币信贷管理处</div>
+              </div>
+              <div class="desc">未来科技城下一步建设发展的几个重点方向是：下一步围绕服务建设的第一个重点，是阿里巴巴的五期建设……</div>
+              <a href="javascript:" class="more">查看更多</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="parts parts-3 parts-4"></div>
+  </div>
+
+  <div class="bottom">
+    <div>
+        <div>策划：  摄影：  设计：者： 编辑：  统筹：  监制： 制作时间：</div>
+        <div>增值电信业务经营许可证: 浙B2-20080242 互联网新闻信息服务许可证:国新网3312006001 网络文化经营许可证：浙网文[2012]0216-022号</div>
+        <div>工信部备案号:浙B2-20080242-1 广播电视节目制作经营许可证：（浙）字第057号短消息代码证：浙号[2006]00072-B011</div>
+        <div>
+          <a href="http://zzhz.zjol.com.cn/05zzhz/www/zzhzinfo/index.shtml" target="_blank" > 网站简介</a> | <a href="http://zzhz.zjol.com.cn/05zzhz/system/2005/07/28/006250385.shtml" target="_blank"> 网站合作</a> | <a href="http://zzhz.zjol.com.cn/05zzhz/www/zzhzinfo/index1.shtml" target="_blank"> 刊登广告</a> | <a href="http://zzhz.zjol.com.cn/05zzhz/system/2005/07/28/006250382.shtml" target="_blank"> 联系方式</a> | <a href="http://zzhz.zjol.com.cn/05zzhz/system/2005/08/22/006277738.shtml"> 主持人介绍</a> | <a href="http://zzhz.zjol.com.cn/05zzhz/system/2005/07/28/006250383.shtml" target="_blank"> 法律顾问</a>
+        </div>
+        <div>浙江在线新闻网站、杭州市建设委员会 联合主办　　浙江在线新闻网站版权所有</div>
+    </div>
+  </div>
+  <script src="./js/global.js"></script>
+</body>
+</html>

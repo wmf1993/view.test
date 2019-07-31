@@ -1,0 +1,145 @@
+html {
+  font-size: 20px;
+}
+body {
+  width: 100%;
+}
+.main {
+  width: 90%;
+  padding: 0 45px;
+}
+body .nav_header {
+  width: 100%;
+}
+body .bottom {
+  width: 100%;
+}
+
+/* header */
+.header {
+  height: 680px;
+  background-image: url(../img/header_m.png);
+
+}
+
+
+
+/* parts-1 */
+.position {
+  width: 100%;
+}
+.position>div {
+  position: relative;
+  top: 0;
+}
+.position>div>div {
+  height: auto;
+  padding: 50px 0 60px;
+  margin: auto;
+  border-radius: 10px;
+}
+.position>div>div div:first-child img {
+  transform: scale(2);
+}
+.position .mobile {
+  text-indent: 2em;
+  line-height: 64px;
+  padding: 20px 90px 0;
+}
+.position .mobile span {
+  /* font-size: 16px; */
+  font-size: 36px;
+}
+
+/* parts-2 */
+.parts-2 {
+  margin-top: 155px;
+}
+.parts-2>div:first-child>div {
+  width: 100%;
+  overflow: hidden;
+}
+.parts-title {
+  width: 100%;
+  font-size: 48px;
+}
+.parts-title div {
+  width: 100%;
+  top: -125px;
+  padding-bottom: 15px;
+}
+.parts .prev, .parts .next {
+  display: none;
+}
+
+/* parts-3 */
+.parts .hero {
+  overflow: hidden;
+}
+.parts .hero img {
+  max-width: 1000px;
+  max-height: 417px;
+}
+.parts-3>div {
+  width: 100%;
+}
+.parts-3 li {
+  float: none;
+  width: 100%;
+  margin: auto auto 45px;
+}
+.parts-3 li:first-child {
+  margin: auto auto 45px;
+}
+.parts-3 li>div:first-child {
+  height: auto;
+}
+.parts-3 li .intro {
+  font-size: 36px;
+  line-height: 60px;
+  padding: 30px 90px;
+}
+.parts-3 li .intro>div:first-child>div:first-child {
+  font-size: 48px;
+}
+.parts-3 li .desc {
+  line-height: 60px;
+  margin: 60px 0 45px;
+}
+.parts-3 li .intro>div:first-child {
+  padding-bottom: 50px;
+}
+.parts-3 li .more {
+  display: none;
+}
+.parts-3 li .load {
+  display: block;
+  text-align: center;
+}
+.parts-3 li .load a {
+  display: inline-block;
+}
+.parts-3>div:first-child div {
+  display: block;
+  font-size: 48px;
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+}
+
+
+/* nav_bar */
+body .nav_header {
+  position: relative;
+}
+body .nav_header .nav-con {
+  width: 100%;
+}
+
+.hidden-m {
+  display: none;
+}
+
+/* bottom */
+body .bottom {
+  display: none;
+}

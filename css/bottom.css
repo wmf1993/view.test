@@ -1,0 +1,23 @@
+.bottom {
+  font-size: 12px;
+  color:#eeeeee;
+  height:210px;
+  border-top:#333333 0px solid;
+  margin:64px 0px 0px 0px;
+  overflow:hidden;
+  background-color:#6C6C6C;
+}
+.bottom>div {
+  width:900px;
+  line-height:28px;
+  text-align: center;
+  margin:0px auto 0px auto;
+  margin:8px auto auto auto;
+}
+.bottom a {
+  color: #eeeeee;
+}
+.bottom a:hover {
+  color: #2b93d2;
+  text-decoration:underline;
+}
