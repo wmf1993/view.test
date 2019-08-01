@@ -1,5 +1,5 @@
 html {
-  font-size: 20px;
+  font-size: 100px;
 }
 body {
   width: 100%;
@@ -7,6 +7,7 @@ body {
 .main {
   width: 90%;
   padding: 0 45px;
+  margin-top: 25px;
 }
 body .nav_header {
   width: 100%;
@@ -14,6 +15,7 @@ body .nav_header {
 body .bottom {
   width: 100%;
 }
+
 
 /* header */
 .header {
@@ -31,25 +33,28 @@ body .bottom {
 .position>div {
   position: relative;
   top: 0;
+  overflow: hidden;
 }
 .position>div>div {
-  height: auto;
+  /* height: auto; */
   padding: 50px 0 60px;
   margin: auto;
   border-radius: 10px;
+  overflow: hidden;
 }
 .position>div>div div:first-child img {
   transform: scale(2);
 }
 .position .mobile {
-  text-indent: 2em;
-  line-height: 64px;
+  font-size: 0.16rem;
   padding: 20px 90px 0;
 }
-.position .mobile span {
-  /* font-size: 16px; */
-  font-size: 36px;
+.position .mobile p {
+  text-indent: 90px;
+  /* text-indent: 2em; */
+  line-height: 64px;
 }
+
 
 /* parts-2 */
 .parts-2 {
@@ -61,7 +66,7 @@ body .bottom {
 }
 .parts-title {
   width: 100%;
-  font-size: 48px;
+  font-size: 0.48rem;
 }
 .parts-title div {
   width: 100%;
@@ -95,12 +100,12 @@ body .bottom {
   height: auto;
 }
 .parts-3 li .intro {
-  font-size: 36px;
+  font-size: 0.36rem;
   line-height: 60px;
   padding: 30px 90px;
 }
 .parts-3 li .intro>div:first-child>div:first-child {
-  font-size: 48px;
+  font-size: 0.48rem;
 }
 .parts-3 li .desc {
   line-height: 60px;
@@ -110,18 +115,46 @@ body .bottom {
   padding-bottom: 50px;
 }
 .parts-3 li .more {
-  display: none;
+  text-align: center;
+  background-color: #b1905b;
 }
+.parts-3 li .more a {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #967138;
+}
+
 .parts-3 li .load {
   display: block;
   text-align: center;
+  margin-top: 35px;
 }
 .parts-3 li .load a {
   display: inline-block;
 }
+.parts-3 li .load a img {
+  animation: logAnimation linear 3s infinite;
+}
+@keyframes logAnimation {
+  0% {
+    transform: scale(1.0)
+  }
+  25% {
+    transform: scale(1.1)
+  }
+  50% {
+    transform: scale(1.0)
+  }
+  75% {
+    transform: scale(0.9)
+  }
+  100% {
+    transform: scale(1.0)
+  }
+}
 .parts-3>div:first-child div {
   display: block;
-  font-size: 48px;
+  font-size: 0.48rem;
   padding-bottom: 15px;
   margin-bottom: 35px;
 }
@@ -133,8 +166,11 @@ body .nav_header {
 }
 body .nav_header .nav-con {
   width: 100%;
+  font-size: 0.20rem;
 }
-
+.open .dropdown-menu {
+  font-size: 0.16rem;
+}
 .hidden-m {
   display: none;
 }

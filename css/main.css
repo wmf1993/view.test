@@ -53,7 +53,7 @@ ul {
   top: -313px;
 }
 .position>div>div {
-  height: 213px;
+  /* height: 213px; */
   padding: 0 30px;
   background-color: #fff6e7;
 }
@@ -67,7 +67,9 @@ ul {
   font-size: 14px;
   line-height: 30px;
   text-align: justify;
-  /* text-justify:distribute-all-lines; */
+}
+.position .mobile {
+  padding-bottom: 35px;
 }
 
 /* parts-2 */
@@ -185,12 +187,12 @@ ul {
   margin-bottom: 20px;
 }
 .parts-3 li>div:first-child {
-  height: 200px;
   background-color: #fff6e7;
 }
 .parts-3 li>div:first-child img {
   display: inherit;
   width: 100%;
+  border: none;
 }
 .parts-3 li .intro {
   font-size: 14px;
