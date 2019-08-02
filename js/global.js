@@ -310,7 +310,7 @@ function move (obj,direction) {
 }
 
 $(document).ready(function () {
-    var imgUrl ='http://zzhz.zjol.com.cn/material/public-resource/img/share-logo.png';
+    var imgUrl ='https://wmf1993.github.io/view.test/img/share-logo.png';
     
     //获取本页面地址作为分享指向链接(重要!!!!)
     var lineLink = window.location.href;
