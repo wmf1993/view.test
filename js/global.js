@@ -314,12 +314,17 @@ $(document).ready(function () {
     
     //获取本页面地址作为分享指向链接(重要!!!!)
     var lineLink = window.location.href;
+    
     //微信分享摘要（35字以内）：必填
-    var descContent =$('.abstract').text();
+    // var descContent =$('.abstract').text();
+    var descContent = document.querySelector('meta[name=description]').content
+
     //微信分享标题(23字以内)：必填
     var shareTitle = document.title;
+
     //对应频道的id：必填
     var appid = '';
+
     //以下内容不需要编辑
     function shareFriend() {
         WeixinJSBridge.invoke('sendAppMessage',{
