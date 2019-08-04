@@ -90,10 +90,10 @@ function addMobileStyle () {
 //       newLink.rel = 'stylesheet'
 //       newLink.href = './css/mobile.css'
 //   }
-  if (isMobile()) {
+  if (!isMobile()) {
       var links = document.getElementsByTagName('link')[0]
       links.rel = 'stylesheet'
-      links.href = './css/mobile.css'
+      links.href = './css/main.css'
   }
 }
 addMobileStyle()
